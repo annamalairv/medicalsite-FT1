@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary-color:#0e204d
+}
+
+.header{
+    --top:0px;
+    position: sticky;
+    top:var(--top,0px);
+    transition: all ease-out 200ms;
+    background:white;
+    
+}
+
+input,input:focus,input:focus-visible{
+    appearance: none;
+    outline: none;
+}
+.link-highlight{
+    font-weight: 600 !important;
+    display: flex;
+    border-bottom:2px solid var(--primary-color)
+}
+
