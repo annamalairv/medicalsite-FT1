@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* fonts */
+@font-face {
+    font-family: "Lora-Bold";
+    src: url("/public/assets/fonts/Lora-Bold.ttf");
+}
+@font-face {
+    font-family: "Lora-Medium";
+    src: url("/public/assets/fonts/Lora-Medium.ttf");
+}
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("/public/assets/fonts/Lora-Regular.ttf");
+}
+@font-face {
+    font-family: "Lora-SemiBold";
+    src: url("/public/assets/fonts/Lora-SemiBold.ttf");
+}
+.lora-bold{
+    font-family: "Lora-Bold" !important;
+}
+.lora-medium{
+    font-family: "Lora-Medium" !important;
+}
+.lora-regular{
+    font-family: "Lora-Regular" !important;
+}
+.lora-semibold{
+    font-family: "Lora-SemiBold" !important;
+}
+/* fonts */
 :root{
     --primary-color:#0e204d
 }
@@ -23,5 +54,38 @@ input,input:focus,input:focus-visible{
     font-weight: 600 !important;
     display: flex;
     border-bottom:2px solid var(--primary-color)
+}
+.appointment-hero-text{
+    position: relative;
+}
+.appointment-hero-text::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height:90%;
+    width:30%;
+    z-index: -1;
+    left:-30px;
+    top:-30px;
+    border-radius: 100vw;
+    background:linear-gradient(180deg,#4999fa45 ,rgba(208,229,254,.5) 64%,hsla(0,0%,100%,0));
+}
+@media screen and (min-width:1560px) {
+    .appointment-hero-text::before{
+        width: 110%;
+        left: -50px;
+        top:-60px
+    }
+}
+@media screen and (min-width:1280px) {
+    .appointment-hero-text::before{
+        height: 110%;
+        width: 25%;
+    }
+}
+@media screen and (min-width:550px) and  (max-width:880px){
+    .appointment-hero-text::before{
+        width: 40%;
+    }
 }
 
