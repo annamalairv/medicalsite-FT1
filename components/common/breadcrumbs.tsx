@@ -1,16 +1,19 @@
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Link from 'next/link'
+
 export class BreadCrumbsProps {
 backgroundColor:string;
 backgroundImage:string;
 textColor:string;
 title:string;
 // TODO convert to array of objects with thier route and id  
-previous:string;
+previous:any;
 constructor(data:BreadCrumbsProps){
     this.backgroundColor = data.backgroundColor ?? "primary";
     this.backgroundImage = data.backgroundImage ?? null;
     this.textColor = data.textColor ??"white";
     this.title = data.title ?? "current page";
-    this.previous = data.previous ?? "Home"
+    this.previous = data.previous ??{name: "Home",route:"/home"}
 }
 }
 
@@ -24,8 +27,8 @@ const {backgroundColor,backgroundImage,title,previous,textColor}=props
                     {title}
                 </div>
                 <div className="flex justify-center gap-4 text-[36px] xl:text-[42px] 2xl:text-[55px]">
-                    <div className="">{previous}</div>
-                    <div className=""> {">"} </div>
+                    <Link href={`/${previous.route}`} >{previous.name}</Link>
+                    <div className=""> <ArrowForwardIosIcon color='inherit' /> </div>
                     <div className="">{title}</div>
                 </div>
             </div>
