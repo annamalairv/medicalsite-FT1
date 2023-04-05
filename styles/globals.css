@@ -88,4 +88,19 @@ input,input:focus,input:focus-visible{
         width: 40%;
     }
 }
+.four-image-layout div{
+    aspect-ratio: 1 !important;
+}
+.four-image-layout .img-1,.img-4{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.four-image-layout .img-2{
+    border-radius: 0 50% 50% 50%;
+    overflow: hidden;
+}
+.four-image-layout .img-3{
+    border-radius: 50% 50% 0% 50%;
+    overflow: hidden;
+}
 
