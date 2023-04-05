@@ -33,6 +33,9 @@ const Header: React.FC<HeaderProps> = (props) => {
             else if (router.pathname == "/about") {
                 setRoute("About us")
             }
+            else if (router.pathname == "/doctors") {
+                setRoute("Doctors")
+            }
         }
         setwindow(true)
         setSideNav(false)
@@ -56,10 +59,11 @@ const Header: React.FC<HeaderProps> = (props) => {
                 <div className={`md:flex gap-4 lg:gap-6 text-primary  items-center hidden`}>
                     <Link className={` ${selectedRoute == "Home" ? "link-highlight" : "hover:font-semibold"}`} href="/home">Home</Link>
                     <Link className={` ${selectedRoute == "About us" ? "link-highlight" : "hover:font-semibold"}`} href="/about">About us</Link>
+                    <Link className={` ${selectedRoute == "Doctors" ? "link-highlight" : "hover:font-semibold"}`} href="/doctors">Doctors</Link>
                     <Link className={` ${selectedRoute == "Contact" ? "link-highlight" : "hover:font-semibold"}`} href="/contact">Contact</Link>
                 </div>
                 <div className="flex gap-4 items-center">
-                    <div className="rounded-full border border-primary border-2 overflow-hidden hidden md:flex items-center">
+                    <div className="rounded-full border w-[180px] lg:w-full border-primary border-2 overflow-hidden hidden md:flex items-center">
                         <input type="text" placeholder="Search here" className="h-full w-full px-4 py-4 text-primary" />
                     </div>
                     <div className="flex flex-col gap-1 md:gap-2" onClick={()=>{setSideNav(true)}}>

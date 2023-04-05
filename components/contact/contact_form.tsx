@@ -6,7 +6,7 @@ export class ContactFormProps {
 }
 const ContactForm: React.FC<ContactFormProps> = (props) => {
     return (
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center px-4">
             <div className="text-tertiary text-sm md:text-lg">
                 We're Ready To Help You
             </div>
@@ -44,6 +44,11 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
                         Write a message
                     </div>
                     <TextField placeholder={"Enter your message..."} rows={4} variant="outlined" className="bg-gray-200 text-lg" multiline />
+                </div>
+                <div className="flex items-center justify-center pb-10">
+                <div className="rounded-full text-center text-white bg-tertiary px-8 py-2">
+                    Send us message +
+                </div>
                 </div>
         </div>
     )

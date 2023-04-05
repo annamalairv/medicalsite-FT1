@@ -8,14 +8,14 @@ export class InstituteInfoProps{
 const InstituteInfo:React.FC<InstituteInfoProps>=(props)=>{
     function Title({icon,name}:{icon:React.ReactNode,name:string}){
         return (
-            <div className="flex items-center  gap-4 text-[27px] md:text-[32px] text-white pt-4 pb-2">
+            <div className="flex items-center  gap-4 text-[22px] md:text-[27px] lg:text-[32px] text-white pt-4 pb-2">
                 {icon}
                 <div className="">{name}</div>
             </div>
         )
     }
 return (
-    <div className="bg-[#499afa] p-12 md:p-16 xl:p-18 rounded-lg shadow h-full">
+    <div className="bg-[#499afa] p-8 md:p-12 xl:p-18 rounded-lg shadow h-full">
         <Title icon={<LocationOnOutlinedIcon fontSize='inherit' color="inherit" />} name={"Address"}/>
         <div className="text-white text-lg py-1">7895 Piermont Dr NE Albuquerque,<br />NM 198866, See Our Stores</div>
         <Title icon={<LocalCafeOutlinedIcon fontSize='inherit' color="inherit" />} name={"Get In Touch"}/>

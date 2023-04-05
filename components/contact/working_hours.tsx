@@ -8,14 +8,14 @@ export class WorkingHoursProps{
 const WorkingHours:React.FC<WorkingHoursProps>=(props)=>{
     function Title({name}:{name:string}){
         return (
-            <div className="flex items-center border-dashed border-b border-white gap-4 text-[20px] md:text-[27px] text-white pt-4 pb-2">
-                <div className="flex-1">{name}</div>
-                <div className="">9.00 - 17.00</div>
+            <div className="flex items-center border-dashed border-b border-white gap-4 text-white pt-4 pb-2 whitespce-nowrap">
+                <div className="flex-1 text-sm md:text-lg lg:text-xl">{name}</div>
+                <div className=" text-[16px] md:text-[20px] lg:text-[27px]">9.00 - 17.00</div>
             </div>
         )
     }
 return (
-    <div className="bg-secondary p-12 md:p-16 xl:p-18 rounded-lg shadow h-full">
+    <div className="bg-secondary p-8 md:p-12 xl:p-18 rounded-lg shadow h-full">
       <div className="text-[27px] md:text-[32px] text-white pt-4 pb-2">
             Working Hours
         </div>
