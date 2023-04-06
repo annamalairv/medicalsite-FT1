@@ -2,6 +2,7 @@ import Image from "next/image"
 import myLoader from "@/utils/common_utils"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+// import { Card } from "@mui/material"
 interface AppointmentProps {
 
 }
@@ -32,6 +33,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }
