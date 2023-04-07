@@ -20,8 +20,8 @@ const Appointment: React.FC<AppointmentProps> = () => {
                 <div className="">
 
                 </div>
-                <div className="col-span-2 mx-auto h-full">
-                    <div className="" style={{ height: `${patternHeight/1.8}px`, width: `${patternwidth*1.2}px` }}>
+                <div className=" col-span-2 mx-auto h-full">
+                    <div className="" style={{ height: `${patternHeight / 1.8}px`, width: `${patternwidth * 1.2}px` }}>
                         <img src="assets/appointment.png" alt="" className="object-cover" />
                     </div>
                     <div className="absolute inset-y-0 right-0 " style={{ zIndex: -1, height: `${patternHeight}px`, width: `${patternwidth}px` }}>
