@@ -30,12 +30,14 @@ const Footer: React.FC<FooterProps> = (props) => {
         // setwindow(true)
     }, [router])
     return (
-        <div style={{ position: "absolute", bottom: 0, width: "100%" }} className="bg-gray-200 p-10 items-center">
-            <div className={`md:flex hidden`}>
+        <div style={{ width: "100%" }} className="mx-auto bg-gray-200 p-10">
+            <div className={`md:flex hidden justify-center`}>
                 <div className="flex flex-row gap-4 py-2 w-fit justify-between container">
                     <div className="flex flex-col gap-4 py-2 w-1/3 ">
+                        <Image width={150} height={45} alt={"logo"} src={"/assets/images/logo.png"} />
+
                         <div className="flex items-center gap-4">
-                            <div className="text-primary w-10/12">
+                            <div className="text-primary text-justify">
                                 Psychiatrists are qualified to assess both the mental and physical aspects of psychological problems.
                             </div>
                         </div>
@@ -66,7 +68,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 py-2 w-1/3">
+                    <div className="flex flex-col gap-4 py-2 ">
                         <div className="flex items-center gap-4">
                             <div className="text-primary font-serif text-xl font-bold ">
                                 Popular Services
@@ -103,7 +105,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 py-2 w-1/3">
+                    <div className="flex flex-col gap-4 py-2 ">
                         <div className="flex items-center gap-4">
                             <div className="text-primary font-serif text-xl font-bold ">
                                 About Us
@@ -141,9 +143,10 @@ const Footer: React.FC<FooterProps> = (props) => {
             <div className={`sm:flex md:hidden`}>
                 <div className="flex flex-col gap-4 py-2">
                     <div className="flex flex-col gap-4 py-2 w-full ">
+                        <Image width={150} height={45} alt={"logo"} src={"/assets/images/logo.png"} />
 
-                        <div className="flex items-center gap-4">
-                            <div className="text-primary">
+                        <div className="flex justify-center gap-4">
+                            <div className="text-primary text-justify">
                                 Psychiatrists are qualified to assess both the mental and physical aspects of psychological problems.
                             </div>
                         </div>
@@ -152,7 +155,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                             <div className="rounded-full bg-primary text-white p-2">
                                 <LocationOnIcon color="inherit" />
                             </div>
-                            <div className="text-primary ">
+                            <div className="text-primary">
                                 55, Ganesh Nagar, Singanallur, Coimbatore 641-002.
                             </div>
                         </div>
@@ -246,7 +249,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="pt-8 pb-6 justify-between container">
+            <div className="pt-8 pb-6 flex justify-center">
                 © Seeva Psychiatrist. All rights reserved.
             </div>
 
