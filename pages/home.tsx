@@ -11,7 +11,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <AboutMainScreen />
       {/* <Card/> */}
-{/* <MedicalService/> */}
+<MedicalService/>
     </div>
   );
 }
