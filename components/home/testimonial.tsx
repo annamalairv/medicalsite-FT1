@@ -27,11 +27,11 @@ const Testimonial:React.FC<TestimonialProps>=()=>{
         }
     return(
         <div className="bg-slate-200 my-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto pr-4 lg:pr-10 xl:pr-20 ">
+            <div className="grid grid-cols-1 md:grid-cols-2  pr-4 lg:pr-10 xl:pr-20 ">
                 <div className="hidden md:block">
                <img src="/assets/images/testimonial_cover.jpg" alt="" />
                 </div>
-                <div className="p-4 md:p-6 lg:p-10">
+                <div className="px-4 md:px-6 lg:px-10 pt-4 md:pt-6 lg:pt-10">
                     <div className="text-tertiary pb-4">
                         Our Testimonials
                     </div>
