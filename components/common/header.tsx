@@ -12,6 +12,7 @@ import { useEffect, useState } from "react"
 import Link from 'next/link'
 import { Drawer } from '@mui/material';
 import SideNav from './sidenav';
+import Footer from './footer';
 export interface HeaderProps {
 }
 
@@ -21,7 +22,7 @@ const Header: React.FC<HeaderProps> = (props) => {
     const router = useRouter();
     const [selectedRoute, setRoute] = useState<string>();
 
-   
+
     useEffect(() => {
         if (router != null) {
             if (router.pathname == "/home") {
@@ -41,47 +42,51 @@ const Header: React.FC<HeaderProps> = (props) => {
         setSideNav(false)
     }, [router])
     const toggleDrawer =
-    () =>{
-   
-      setSideNav(false);
-    };
+        () => {
+
+            setSideNav(false);
+        };
 
     return (
         < >
             <CssBaseline />
             <HideOnScroll {...props}>
-                <AppBar sx={{background:"white" ,padding:"10px 0px",position:"sticky"}} elevation={0} >
+                <AppBar sx={{ background: "white", padding: "10px 0px", position: "sticky" }} elevation={0} >
                     <Toolbar className='justify-between xl:container xl:mx-auto h-full'>
-                    {
-                    windowStatus &&
-                    <Image loader={myLoader} width={150} height={45} alt={"logo"} src={"assets/images/logo.png"} />
-                }
-                <div className={`md:flex gap-4 lg:gap-6 text-primary  items-center hidden`}>
-                    <Link className={` ${selectedRoute == "Home" ? "link-highlight" : "hover:font-semibold"}`} href="/home">Home</Link>
-                    <Link className={` ${selectedRoute == "About us" ? "link-highlight" : "hover:font-semibold"}`} href="/about">About us</Link>
-                    <Link className={` ${selectedRoute == "Doctors" ? "link-highlight" : "hover:font-semibold"}`} href="/doctors">Doctors</Link>
-                    <Link className={` ${selectedRoute == "Contact" ? "link-highlight" : "hover:font-semibold"}`} href="/contact">Contact</Link>
-                </div>
-                <div className="flex gap-4 items-center">
-                    <div className="rounded-full border w-[180px] lg:w-full border-primary border-2 overflow-hidden hidden md:flex items-center">
-                        <input type="text" placeholder="Search here" className="h-full w-full px-4 py-4 text-primary" />
-                    </div>
-                    <div className="flex flex-col gap-1 md:gap-2" onClick={()=>{setSideNav(true)}}>
-                        <div className="h-1 w-6 md:w-10 bg-primary rounded"></div>
-                        <div className="h-1 w-6 md:w-8 bg-primary rounded"></div>
-                        <div className="h-1 w-6 md:w-10 bg-primary rounded"></div>
-                    </div>
-                </div>
+                        {
+                            windowStatus &&
+                            <Image loader={myLoader} width={150} height={45} alt={"logo"} src={"assets/images/logo.png"} />
+                        }
+                        <div className={`md:flex gap-4 lg:gap-6 text-primary  items-center hidden`}>
+                            <Link className={` ${selectedRoute == "Home" ? "link-highlight" : "hover:font-semibold"}`} href="/home">Home</Link>
+                            <Link className={` ${selectedRoute == "About us" ? "link-highlight" : "hover:font-semibold"}`} href="/about">About us</Link>
+                            <Link className={` ${selectedRoute == "Doctors" ? "link-highlight" : "hover:font-semibold"}`} href="/doctors">Doctors</Link>
+                            <Link className={` ${selectedRoute == "Contact" ? "link-highlight" : "hover:font-semibold"}`} href="/contact">Contact</Link>
+                        </div>
+                        <div className="flex gap-4 items-center">
+                            <div className="rounded-full border w-[180px] lg:w-full border-primary border-2 overflow-hidden hidden md:flex items-center">
+                                <input type="text" placeholder="Search here" className="h-full w-full px-4 py-4 text-primary" />
+                            </div>
+                            <div className="flex flex-col gap-1 md:gap-2" onClick={() => { setSideNav(true) }}>
+                                <div className="h-1 w-6 md:w-10 bg-primary rounded"></div>
+                                <div className="h-1 w-6 md:w-8 bg-primary rounded"></div>
+                                <div className="h-1 w-6 md:w-10 bg-primary rounded"></div>
+                            </div>
+                        </div>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>
             <Drawer
-            anchor={'right'}
-            open={sideNav}
-            onClose={()=>{toggleDrawer()}}
-          >
-            <SideNav closeSideNav={()=>{toggleDrawer()}} />
-          </Drawer>
+                anchor={'right'}
+                open={sideNav}
+                onClose={() => { toggleDrawer() }}
+            >
+                <SideNav closeSideNav={() => { toggleDrawer() }} />
+            </Drawer>
+
+
+
+
         </>
     )
 }
