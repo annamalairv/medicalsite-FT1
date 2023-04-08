@@ -3,6 +3,7 @@ import Appointment from "@/components/home/appointment";
 import WhyChooseUs from "@/components/home/why_choose_us";
 import Card from "@/components/common/card";
 import MedicalService from "@/components/home/medicalService";
+import HelpCardSection from "@/components/home/helpCardSection";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <AboutMainScreen />
       {/* <Card/> */}
 <MedicalService/>
+<HelpCardSection/>
     </div>
   );
 }
