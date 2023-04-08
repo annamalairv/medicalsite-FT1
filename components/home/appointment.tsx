@@ -14,6 +14,13 @@ const Appointment: React.FC<AppointmentProps> = () => {
         setwindow(true)
         setPatternWidth(window.innerWidth / 2.5)
         setPatternHeight(window.innerHeight - 84)
+        window.addEventListener("resize",()=>{
+            setPatternWidth(window.innerWidth / 2.5)
+        setPatternHeight(window.innerHeight - 84)
+        })
+        return (
+            window.removeEventListener("resize",()=>{})
+        )
     }, [])
     return (
         <div className="">
