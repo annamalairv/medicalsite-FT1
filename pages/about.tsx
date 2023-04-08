@@ -1,5 +1,6 @@
 import AboutMainScreen from "@/components/about/about_main_screen";
 import Breadcrumbs, { BreadCrumbsProps } from "@/components/common/breadcrumbs";
+import WhyChooseUs from "@/components/contact/why_choose_us";
 import { useState } from "react";
 
 export default function AboutPage() {
@@ -16,6 +17,7 @@ export default function AboutPage() {
     <div className="">
       <Breadcrumbs {...breadCrumbsProps} />
       <AboutMainScreen/>
+      <WhyChooseUs/>
     </div>
   );
 }
