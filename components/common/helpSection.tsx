@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import FourImageLayout from '../about/four_image_layout'
+
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 const HelpSection = () => {
@@ -51,7 +51,7 @@ const HelpSection = () => {
         
         <div className=" flex items-center justify-center mx-auto h-full">
                     <div className="flex items-center">
-                        <img src="assets/images/help-section-img.jpg" alt="" className="object-cover 2xl:object-fill" style={{ width: `500px` }} />
+                        <img src="assets/images/help-section-img.jpg" alt="" className="object-cover 2xl:object-fill md:h-[500px]" style={{ width: `500px` }} />
                     </div>
                  
                 </div>
