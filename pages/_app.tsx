@@ -1,15 +1,45 @@
-import Footer from '@/components/common/footer'
-import Header from '@/components/common/header'
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import Footer from "@/components/common/footer";
+import Header from "@/components/common/header";
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import { useEffect} from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
- 
-  return(
-  <div className="">
-        <Header  />
-    <Component {...pageProps} />
-    <Footer />
-  </div>
-  )
+
+  const router = useRouter()
+  useEffect(() => {
+
+
+      let options = {
+        root: null,
+        threshold: 0,
+        rootMargin: "200px 0px 100px 0px",
+      };
+      let animatedComponent =
+        document.querySelectorAll(".slideLeft, .slideRight, .zoomIn,.zoomOut, .fadeIn")
+      console.log(animatedComponent,"animatedComponent");
+      
+      let animatedComponentObserver = new IntersectionObserver(animate, options);
+      animatedComponent?.forEach((component: any) => {
+        if(component && typeof component != "number")
+        animatedComponentObserver?.observe(component);
+      });
+    
+  }, [router]);
+
+  function animate(entries: any) {
+    entries.forEach((element: any) => {
+      element.target.classList.toggle("animate", element.isIntersecting);
+    });
+  }
+  return (
+    <div className="flex flex-col h-full w-full overflow-x-hidden">
+      <Header />
+      <div className="flex-1">
+        <Component {...pageProps} className="" />
+      </div>
+      <Footer  />
+    </div>
+  );
 }

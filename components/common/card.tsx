@@ -6,7 +6,6 @@ import React, { useState } from "react";
 const card = ({ prop }) => {
   const [card1, setCard1] = useState(false);
 
-  console.log(card, "card");
 
   return (
     <div className="p-4">
