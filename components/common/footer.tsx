@@ -34,7 +34,9 @@ const Footer: React.FC<FooterProps> = (props) => {
             <div className={`md:flex hidden justify-center`}>
                 <div className="flex flex-row gap-4 py-2 w-fit justify-between container">
                     <div className="flex flex-col gap-4 py-2 w-1/3 ">
+                        <div className="" style={{scale:1.1}} >
                         <Image width={150} height={45} alt={"logo"} src={"/assets/images/logo.png"} />
+                        </div>
 
                         <div className="flex items-center gap-4">
                             <div className="text-primary text-justify">
