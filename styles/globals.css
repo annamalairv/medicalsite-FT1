@@ -73,8 +73,8 @@ opacity:0;
 }
 .slideLeft.animate,
 .slideRight.animate,
-.slideUp.animate,
-.slideDown.animate,
+/* .slideUp.animate,
+.slideDown.animate, */
 .fadeIn.animate,
 .zoomOut.animate,
     .zoomIn.animate{
