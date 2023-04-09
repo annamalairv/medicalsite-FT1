@@ -1,6 +1,7 @@
 import Breadcrumbs, { BreadCrumbsProps } from '@/components/common/breadcrumbs';
-import InstituteInfo from '@/components/contact/institute_info';
 import WorkingHours from '@/components/contact/working_hours';
+import Departments from '@/components/service/departments';
+import MakeAnAppointmentMini from '@/components/service/make_an_appointment_mini';
 import React, { useState } from 'react'
 
 const Services = () => {
@@ -33,14 +34,17 @@ const Services = () => {
                  
                 </div>
       </div> */}
-      <div className="grid grid-cols-1  md:grid-cols-2 md:py-20 md:px-40 py-4 px-10 ">
-      <div className="w-full md:w-10/12" >
-                    <WorkingHours />
+      <Departments />
+      <MakeAnAppointmentMini  />
+
+      <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-10 lg:gap-16 md:py-20 px-4  md:px-6 lg:px-10 xl:px-32 py-4 px-10">
+      <div className="w-full md:w-1/2 lg:w-[40%]" >
+                    <WorkingHours background='tertiary' />
                 </div>
                 {/* <div className="hidden md:block  ">
                <img src="/assets/images/testimonial_cover.jpg" alt="" />
                 </div> */}
-                 <div className="flex items-center md:w-fit pt-6">
+                 <div className="flex-1 flex items-center md:w-fit pt-6">
                         <img src="assets/images/testimonial_cover.jpg" alt="" className="object-cover 2xl:object-fill  "  />
                     </div>
                
@@ -55,7 +59,6 @@ const Services = () => {
               
                 </div> */}
             </div>
-   
   </div>
   )
 }

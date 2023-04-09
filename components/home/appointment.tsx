@@ -44,7 +44,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
           <div
             className="md:flex items-center hidden fadeIn"
             style={{
-            //   height: `${patternHeight / 1.8}px`,
+              height: `${patternHeight / 1.8}px`,
               width: `${patternwidth * 1.1}px`,
             }}
           >
@@ -92,10 +92,17 @@ const Appointment: React.FC<AppointmentProps> = () => {
           </div>
         </div>
         <div className=" relative">
-          <img src="assets/images/home-page-pattern.jpg" alt="" className="w-full" />
-          <img src="assets/images/appointment.png" alt="" className="absolute inset-y-10 inset-x-6 w-3/4 h-3/4 absolute-center" />
+          <img
+            src="assets/images/home-page-pattern.jpg"
+            alt=""
+            className="w-full"
+          />
+          <img
+            src="assets/images/appointment.png"
+            alt=""
+            className="absolute inset-y-10 inset-x-6 w-3/4 h-3/4 absolute-center"
+          />
         </div>
-        
       </div>
     </div>
   );
