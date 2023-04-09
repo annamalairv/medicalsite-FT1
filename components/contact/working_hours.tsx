@@ -1,11 +1,10 @@
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import LocalCafeOutlinedIcon from '@mui/icons-material/LocalCafeOutlined';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-export class WorkingHoursProps{
 
+export class WorkingHoursProps{
+background?:string ="secondary";
 }
 
 const WorkingHours:React.FC<WorkingHoursProps>=(props)=>{
+    const {background}= props
     function Title({name}:{name:string}){
         return (
             <div className="flex items-center border-dashed border-b border-white gap-4 text-white pt-4 pb-2 whitespce-nowrap">
@@ -15,8 +14,8 @@ const WorkingHours:React.FC<WorkingHoursProps>=(props)=>{
         )
     }
 return (
-    <div className="bg-secondary p-8 md:p-12 xl:p-18 rounded-lg shadow h-full">
-      <div className="text-[27px] md:text-[32px] text-white pt-4 pb-2">
+    <div className={`bg-${background ?? "secondary"} p-8 md:p-12 xl:p-18 rounded-lg shadow h-full`}>
+      <div className="text-[27px] md:text-[32px] text-white pt-4 pb-2 lora-bold">
             Working Hours
         </div>
         {

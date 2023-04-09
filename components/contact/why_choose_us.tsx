@@ -6,7 +6,7 @@ export interface WhyChooseUsProps{
 const WhyChooseUs:React.FC<WhyChooseUsProps>=(props)=>{
     return (
         <>
-        <div className="overflow-hidden">
+        <div className="overflow-hidden pt-4">
         <div className="bg-secondary relative h-screen " >
             <div className="grid place-content-center h-full text-white text-center container mx-auto">
                 <div className="text-lg pb-2 lora-semibold">
