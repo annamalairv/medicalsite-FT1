@@ -7,14 +7,27 @@ import { useEffect} from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const router = useRouter()
+  const router = useRouter();
+
+  // useEffect(() => {
+  //   const handleRouteChange = (url:any) => {
+  //    window.scrollTo(0,0);
+  //   }
+
+  //   router.events.on('routeChangeStart', handleRouteChange)
+
+  //   // If the component is unmounted, unsubscribe
+  //   // from the event with the `off` method:
+  //   return () => {
+  //     router.events.off('routeChangeStart', handleRouteChange)
+  //   }
+  // }, [])
+
   useEffect(() => {
-
-
       let options = {
         root: null,
         threshold: 0,
-        rootMargin: "200px 0px 100px 0px",
+        rootMargin: "200px 0px -50px 0px",
       };
       let animatedComponent =
         document.querySelectorAll(".slideLeft, .slideRight, .zoomIn,.zoomOut, .fadeIn")
@@ -25,7 +38,6 @@ export default function App({ Component, pageProps }: AppProps) {
         if(component && typeof component != "number")
         animatedComponentObserver?.observe(component);
       });
-    
   }, [router]);
 
   function animate(entries: any) {

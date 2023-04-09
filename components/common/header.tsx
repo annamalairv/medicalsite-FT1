@@ -12,7 +12,6 @@ import { useEffect, useState } from "react"
 import Link from 'next/link'
 import { Drawer } from '@mui/material';
 import SideNav from './sidenav';
-import Footer from './footer';
 export interface HeaderProps {
 }
 
@@ -34,8 +33,8 @@ const Header: React.FC<HeaderProps> = (props) => {
             else if (router.pathname == "/about") {
                 setRoute("About us")
             }
-            else if (router.pathname == "/doctors") {
-                setRoute("Doctors")
+            else if (router.pathname == "/courses") {
+                setRoute("Courses")
             }
             else if (router.pathname == "/Services") {
                 setRoute("Services")
@@ -43,6 +42,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         }
         setwindow(true)
         setSideNav(false)
+        
     }, [router])
     const toggleDrawer =
         () => {
@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                         <div className={`md:flex gap-4 lg:gap-6 text-primary  items-center hidden`}>
                             <Link className={` ${selectedRoute == "Home" ? "link-highlight" : "hover:font-semibold"}`} href="/home">Home</Link>
                             <Link className={` ${selectedRoute == "About us" ? "link-highlight" : "hover:font-semibold"}`} href="/about">About us</Link>
-                            <Link className={` ${selectedRoute == "Doctors" ? "link-highlight" : "hover:font-semibold"}`} href="/doctors">Doctors</Link>
+                            <Link className={` ${selectedRoute == "Courses" ? "link-highlight" : "hover:font-semibold"}`} href="/courses">Courses</Link>
                             <Link className={` ${selectedRoute == "Contact" ? "link-highlight" : "hover:font-semibold"}`} href="/contact">Contact</Link>
                             <Link className={` ${selectedRoute == "Services" ? "link-highlight" : "hover:font-semibold"}`} href="/Services">Services</Link>
                         </div>
@@ -87,10 +87,6 @@ const Header: React.FC<HeaderProps> = (props) => {
             >
                 <SideNav closeSideNav={() => { toggleDrawer() }} />
             </Drawer>
-
-
-
-
         </>
     )
 }
@@ -99,19 +95,12 @@ export default Header;
 
 
 interface Props {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
     window?: () => Window;
     children: React.ReactElement;
 }
 
 function HideOnScroll(props: Props) {
     const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
     const trigger = useScrollTrigger({
         target: window ? window() : undefined,
     });

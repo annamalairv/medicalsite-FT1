@@ -26,6 +26,12 @@ const SideNav: React.FC<SideNavProps> = (props) => {
             else if (router.pathname == "/about") {
                 setRoute("About us")
             }
+            else if (router.pathname == "/courses") {
+                setRoute("Courses")
+            }
+            else if (router.pathname == "/Services") {
+                setRoute("Services")
+            }
         }
 
 
@@ -39,7 +45,10 @@ const SideNav: React.FC<SideNavProps> = (props) => {
             <div className={`flex flex-col gap-2 md:hidden pt-4`}>
                 <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "Home" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/home">Home</Link>
                 <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "About us" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/about">About us</Link>
+                <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "Courses" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/courses">Courses</Link>
+
                 <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "Contact" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/contact">Contact</Link>
+                <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "Services" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/Services">Services</Link>
             </div>
             <div className="hidden md:block">
 
