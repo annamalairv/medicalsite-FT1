@@ -12,7 +12,8 @@ const ImageCardWithText: React.FC<ImageCardWithTextProps> = (props) => {
             <img src={props.imageUrl!} alt="" width="100%" height="280px" className="object-cover h-[280px]" />
             </div>
                 }
-                <div className="absolute -top-[40px] inset-x-[20px] bg-white md:text-lg lg:text-xl py-6 flex items-center justify-center text-center lora-bold ">
+                <div className="absolute -top-[40px] inset-x-[20px] text-[#2290BA] bg-gradient-to-b from-slate-100 to-white
+                 md:text-lg lg:text-xl py-6 flex items-center justify-center text-center lora-bold ">
                     {props.text}
                 </div>
         </div>

@@ -7,9 +7,9 @@ const WhyChooseUs:React.FC<WhyChooseUsProps>=(props)=>{
     return (
         <>
         <div className="overflow-hidden pt-4">
-        <div className="bg-secondary relative h-screen " >
+        <div className="bg-gradient-to-r from-[#14C3D9] to-[#DCD96C] relative h-screen " >
             <div className="grid place-content-center h-full text-white text-center container mx-auto">
-                <div className="text-lg pb-2 lora-semibold">
+                <div className="text-4xl pb-2 lora-semibold">
                     Why choose our medical
                 </div>
                 <div className="text-[45px] lora-bold">

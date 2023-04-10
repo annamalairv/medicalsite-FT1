@@ -26,15 +26,15 @@ const Appointment: React.FC<AppointmentProps> = () => {
       >
         <div className=" h-full w-full md:w-5/12 2xl:w-[40%] flex flex-col items-center justify-center">
           <div className="ml-20 flex flex-col items-start justify-center appointment-hero-text">
-            <div className="lora-bold leading-tight text-secondary text-[60px] lg:text-[72px] xl:text-[85px] slideRight">
+            <div className="lora-bold leading-tight text-[#2290BA] text-[60px] lg:text-[72px] xl:text-[85px] slideRight">
               We Care Medical & Health
             </div>
-            <div className="lora-regular md:text-lg lg:text-xl 2xl:text-2xl pt-4 md:pt-8 text-primary text-justify">
+            <div className="lora-regular md:text-lg lg:text-xl 2xl:text-2xl pt-4 md:pt-8 text-[#2290BA] text-justify">
               Dolor sit amet consectetur adipiscing elitsedes eiusmod tempor
               incididunt utlabore Lorem
             </div>
             <div className="lora-semibold mt-10">
-              <div className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-tertiary text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
+              <div className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] cursor-pointer text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
                 Make an Appointment +
               </div>
             </div>
@@ -85,7 +85,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
               incididunt utlabore Lorem
             </div>
             <div className="lora-semibold my-10">
-              <div className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-tertiary text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
+              <div className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-[#14C3D9] text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
                 Make an Appointment +
               </div>
             </div>

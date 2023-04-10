@@ -22,7 +22,7 @@ const {backgroundColor,backgroundImage,title,previous,textColor}=props
     return (
         <div className="relative ">
             <img src={backgroundImage} alt="" width="100%" height="280px" className="object-cover h-[280px]" />
-            <div className={`absolute z-1 inset-0 text-center flex flex-col items-center justify-center`} style={{background:backgroundColor,color:textColor,opacity:0.85}}>
+            <div className={`absolute z-1 inset-0 text-center flex flex-col items-center justify-center bg-gradient-to-r from-[#14C3D9] to-[#DCD96C]`} style={{color:textColor,opacity:0.85}}>
                 <div className="text-[56px] xl:text-[72px] 2xl:text-[85px] p-4">
                     {title}
                 </div>

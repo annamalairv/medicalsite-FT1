@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = (props) => {
 
     useEffect(() => {
         if (router != null) {
-            if (router.pathname == "/home") {
+            if (router.pathname == "/home" || router.pathname == "/") {
                 setRoute("Home")
             }
             else if (router.pathname == "/contact") {
@@ -54,11 +54,13 @@ const Header: React.FC<HeaderProps> = (props) => {
         < >
             <CssBaseline />
             <HideOnScroll {...props}>
-                <AppBar sx={{ background: "white", padding: "10px 0px", position: "sticky" }} elevation={0} >
+                <AppBar sx={{ 
+                     background: "white",
+                 padding: "10px 0px", position: "sticky" }} elevation={0} >
                     <Toolbar className='justify-between xl:container xl:mx-auto h-full'>
                         {
                             windowStatus &&
-                            <Image loader={myLoader} width={150} height={45} alt={"logo"} src={"assets/images/logo.png"} />
+                            <Image loader={myLoader} width={150} height={45} alt={"logo"} src={"assets/images/otLogo.png"} />
                         }
                         <div className={`md:flex gap-4 lg:gap-6 text-primary  items-center hidden`}>
                             <Link className={` ${selectedRoute == "Home" ? "link-highlight" : "hover:font-semibold"}`} href="/home">Home</Link>

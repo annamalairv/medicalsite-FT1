@@ -102,8 +102,9 @@ input,input:focus,input:focus-visible{
 }
 .link-highlight{
     font-weight: 600 !important;
+    color: #2290BA;
     display: flex;
-    border-bottom:2px solid var(--primary-color)
+    border-bottom:2px solid #2290BA
 }
 .appointment-hero-text{
     position: relative;
