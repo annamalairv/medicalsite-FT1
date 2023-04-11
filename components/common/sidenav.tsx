@@ -39,7 +39,7 @@ const SideNav: React.FC<SideNavProps> = (props) => {
     return (
         <div className="bg-white h-full flex flex-col px-4 md:px-10 pt-6 pb-2 w-[80vw] md:w-[350px] lg:w-[400px]">
             <div className="flex justify-between gap-2 items-center">
-                <Image loader={myLoader} width={150} height={65} alt={"logo"} src={"assets/images/logo.png"} />
+                <Image loader={myLoader} width={150} height={65} alt={"logo"} src={"assets/images/otLogo.png"} />
                 <CloseIcon fontSize="large" onClick={()=>{closeSideNav()}} />
             </div>
             <div className={`flex flex-col gap-2 md:hidden pt-4`}>

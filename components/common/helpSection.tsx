@@ -18,10 +18,10 @@ const HelpSection = () => {
   return (
     <div className=" ">
       <div
-        className={` z-1 inset-0 text-center flex flex-col items-center justify-center bg-gradient-to-r from-[#14C3D9] to-[#DCD96C]`}
+        className={` text-center flex flex-col items-center justify-center dark-bg`}
         style={{ opacity: 0.85 }}
       >
-        <div className="text-[26px] xl:text-[42px] 2xl:text-[45px] p-8 text-white">
+        <div className="text-[26px] xl:text-[42px] 2xl:text-[45px] p-8 text-yellow-300 lora-bold">
           Learn better health outcomes, improve costs and increase productivity
           for your business
         </div>

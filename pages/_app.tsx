@@ -46,11 +46,9 @@ export default function App({ Component, pageProps }: AppProps) {
     });
   }
   return (
-    <div className="flex flex-col h-full w-full overflow-x-hidden">
+    <div className="">
       <Header />
-      <div className="flex-1">
         <Component {...pageProps} className="" />
-      </div>
       <Footer  />
     </div>
   );

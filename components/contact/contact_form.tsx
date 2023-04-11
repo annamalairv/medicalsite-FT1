@@ -6,7 +6,7 @@ export class ContactFormProps {
 }
 const ContactForm: React.FC<ContactFormProps> = (props) => {
     return (
-        <div className="container mx-auto text-center px-4">
+        <div className="container mx-auto text-center px-4 xl:px-20">
             <div className="text-tertiary text-sm md:text-lg lora-semibold">
                 We're Ready To Help You
             </div>

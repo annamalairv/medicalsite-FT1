@@ -1,6 +1,6 @@
 
 export class WorkingHoursProps{
-background?:string ="secondary";
+background?:string ="bg-primary";
 }
 
 const WorkingHours:React.FC<WorkingHoursProps>=(props)=>{
@@ -14,7 +14,7 @@ const WorkingHours:React.FC<WorkingHoursProps>=(props)=>{
         )
     }
 return (
-    <div className={`bg-${background ?? "secondary"} p-8 md:p-12 xl:p-18 rounded-lg shadow h-full`}>
+    <div className={`${background ?? "bg-primary"} p-8 md:p-12 xl:p-18 rounded-lg shadow h-full`}>
       <div className="text-[27px] md:text-[32px] text-white pt-4 pb-2 lora-bold">
             Working Hours
         </div>
