@@ -6,19 +6,19 @@
 /* fonts */
 @font-face {
     font-family: "Lora-Bold";
-    src: url("/public/assets/fonts/Lora-Bold.ttf");
+    src: url("/assets/fonts/Lora-Bold.ttf");
 }
 @font-face {
     font-family: "Lora-Medium";
-    src: url("/public/assets/fonts/Lora-Medium.ttf");
+    src: url("/assets/fonts/Lora-Medium.ttf");
 }
 @font-face {
     font-family: "Lora-Regular";
-    src: url("/public/assets/fonts/Lora-Regular.ttf");
+    src: url("/assets/fonts/Lora-Regular.ttf");
 }
 @font-face {
     font-family: "Lora-SemiBold";
-    src: url("/public/assets/fonts/Lora-SemiBold.ttf");
+    src: url("/assets/fonts/Lora-SemiBold.ttf");
 }
 .lora-bold{
     font-family: "Lora-Bold" !important;
@@ -36,24 +36,21 @@
 /* background */
 .dark-bg{
     background-size: 400% 400% !important;
-    /* background: #2c3e50;  /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  Chrome 10-25, Safari 5.1-6 */ 
-    /* background: linear-gradient(to right, #3498db, #2c3e50); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
     background:  linear-gradient(-45deg, #3498db, #1d4e80,#3498db,#1d4e80)   ;
-    color: rgb(229, 229, 46);
-    animation: gradient 15s ease infinite !important;
+    animation: gradient 12s ease infinite !important;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
+    0% {
+        background-position: 0% 50%;
 	}
 	50% {
-		background-position: 100% 50%;
+        background-position: 100% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+        background-position: 0% 50%;
 	}
 }
+/* background */
 /* basic */
 html{
     height: 100%;
@@ -186,4 +183,29 @@ input,input:focus,input:focus-visible{
 .zoom-in:hover img{
     transform: scale(1.1);
     transition: all 250ms ease-out;
+}
+.quote-before::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("/assets/images/testimonial_quote.png");
+    height: 60px;
+    width: 60px;
+    z-index: 0;
+    opacity: 0.4;
+    left:-10px;
+    top:40px;
+    background-size: 100% 100%
+}
+@media screen and (min-width:768px) {
+    .quote-before::before{
+        top:50px
+    }
+}
+@media screen and (min-width:1024px) {
+    .quote-before::before{
+        top:60px;
+        height: 80px;
+    width: 80px;
+    }
 }

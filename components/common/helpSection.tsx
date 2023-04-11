@@ -21,13 +21,13 @@ const HelpSection = () => {
         className={` text-center flex flex-col items-center justify-center dark-bg`}
         style={{ opacity: 0.85 }}
       >
-        <div className="text-[26px] xl:text-[42px] 2xl:text-[45px] p-8 text-yellow-300 lora-bold">
+        <div className="text-[26px] xl:text-[42px] 2xl:text-[45px] p-8 text-white lora-bold">
           Learn better health outcomes, improve costs and increase productivity
           for your business
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 container mx-auto px-20 md:px-18 lg:px-20 py-20 pt-32 2xl:px-30 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 container mx-auto px-4 sm:px-8 md:px-18 lg:px-20 py-20 pt-32 2xl:px-30 ">
         <div className="flex flex-col gap-4 justify-start items-start">
           <div className="text-[#2290BA] text-md md:text-xl lg:text-2xl">How Can We Help</div>
           <div className="text-2xl md:text-3xl lg:text-4xl text-[#2290BA] pt-2">

@@ -31,8 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
       };
       let animatedComponent =
         document.querySelectorAll(".slideLeft, .slideRight, .zoomIn,.zoomOut, .fadeIn")
-      console.log(animatedComponent,"animatedComponent");
-      
       let animatedComponentObserver = new IntersectionObserver(animate, options);
       animatedComponent?.forEach((component: any) => {
         if(component && typeof component != "number")
