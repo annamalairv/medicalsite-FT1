@@ -42,7 +42,7 @@ const SideNav: React.FC<SideNavProps> = (props) => {
                 <Image loader={myLoader} width={150} height={65} alt={"logo"} src={"assets/images/otLogo.png"} />
                 <CloseIcon fontSize="large" onClick={()=>{closeSideNav()}} />
             </div>
-            <div className={`flex flex-col gap-2 md:hidden pt-4`}>
+            <div className={`flex flex-col gap-2 md:hidden text-primary pt-4`}>
                 <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "Home" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/home">Home</Link>
                 <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "About us" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/about">About us</Link>
                 <Link className={`text-xl py-3 md:p-4 ${selectedRoute == "Courses" ? "font-bold underline underline-offset-4" : "hover:font-semibold "}`} href="/courses">Courses</Link>
