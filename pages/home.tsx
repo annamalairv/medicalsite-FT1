@@ -15,7 +15,7 @@ export default function HomePage() {
       <AboutMainScreen />
       <MakeAnAppointment/>
       <Testimonial/>
-      <MedicalService/>
+      {/* <MedicalService/> */}
 <HelpCardSection/>
     </div>
   );

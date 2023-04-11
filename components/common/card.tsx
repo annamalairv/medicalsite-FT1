@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import gitdp from';
 // medi-app\assets\
 
-const card = ({ prop }) => {
+const card = (prop:any) => {
   const [card1, setCard1] = useState(false);
 
 
