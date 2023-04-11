@@ -13,7 +13,7 @@ const MakeAnAppointmentMini: React.FC<AppointmentProps> = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-10 lg:gap-16 md:py-20 px-4  md:px-6 lg:px-10 xl:px-32 py-4 px-10 ">
         <div className="w-full md:w-1/2 lg:w-[40%]">
-      <div className="w-full bg-secondary rounded-lg px-4 lg:px-8 xl:px-10  text-center md:text-start">
+      <div className="w-full bg-primary rounded-lg px-4 lg:px-8 xl:px-10  text-center md:text-start slideRight">
         <div className=" text-[28px] md:text-[38px] pt-8 lg:text-[45px] py-2 lora-bold text-white">
           Appointment
         </div>
@@ -24,7 +24,7 @@ const MakeAnAppointmentMini: React.FC<AppointmentProps> = () => {
           obcaecati neque debitis at!
         </div>
         <div className="flex flex-col gap-4 leading-1">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 ">
             <div className="rounded-full overflow-hidden  ">
               <input
                 className="h-12 md:h-14 lg:h-16 w-full px-4 md:px-6 lg:px-8 xl:px-10 md:text-lg xl:text-xl"
@@ -35,7 +35,7 @@ const MakeAnAppointmentMini: React.FC<AppointmentProps> = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 ">
             <div className="rounded-full overflow-hidden  ">
               <input
                 className="h-12 md:h-14 lg:h-16 w-full px-4 md:px-6 lg:px-8 xl:px-10 md:text-lg xl:text-xl"
@@ -46,7 +46,7 @@ const MakeAnAppointmentMini: React.FC<AppointmentProps> = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 ">
             <div className="rounded-full overflow-hidden  ">
               <input
                 className="h-12 md:h-14 lg:h-16 w-full px-4 md:px-6 lg:px-8 xl:px-10 md:text-lg xl:text-xl"
@@ -57,7 +57,7 @@ const MakeAnAppointmentMini: React.FC<AppointmentProps> = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2  ">
+          <div className="flex flex-col gap-2   ">
             <div className="rounded-full overflow-hidden  ">
               <input
                 type="date"
@@ -77,7 +77,7 @@ const MakeAnAppointmentMini: React.FC<AppointmentProps> = () => {
         </div>
       </div>
         </div>
-      <div className="flex-1 w-full  md:h-full ">
+      <div className="flex-1 w-full  md:h-full slideLeft">
         <div className="lora-bold text-lg md:text-2xl lg:text-3xl xl:text-4xl pb-2 lg:pb-4">
           Neurology Care
         </div>

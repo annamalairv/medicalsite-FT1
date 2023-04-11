@@ -73,19 +73,19 @@ export default function DoctorsPage() {
           </div>
         </div>
       </div> */}
-          <div className="flex-1 flex flex-col gap-4 slideRight">
+          <div className={`flex-1 flex flex-col gap-4 ${index % 2 == 0 ?"slideRight":"slideLeft"}`}>
             <div className="text-[46px] xl:text-[62px] 2xl:text-[75px] py-4 lora-bold">
               {course.name}
             </div>
 
             <div className="text-lg md:text-xl lg:text-2xl lora-regular mt-4">
-             {course.classes.map((prop)=>{
+             {course.classes.map((prop:Array<string>)=>{
               return (
                 <div className="flex flex-row">
                     <div className="rounded-full  text-[#499AFA] ">
                     <SchoolIcon color="inherit" />
                   </div>
-                <div className="pl-4">{prop}</div>
+                <div className={`pl-4 zoomOut`}>{prop}</div>
                 </div>
               )
              })}
@@ -97,7 +97,7 @@ export default function DoctorsPage() {
           </div>
           
           </div>
-          <img src={course.url} alt="" className="w-[50%] slideLeft" />
+          <img src={course.url} alt="" className={`w-[50%] ${index % 2 == 0 ?"slideLeft":"slideRight"}`} />
         </div>
       </div>
     );

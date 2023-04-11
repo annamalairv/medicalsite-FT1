@@ -5,7 +5,7 @@ export interface DepartmentProps {}
 const Departments: React.FC<DepartmentProps> = () => {
   function Title({ name }: { name: string }) {
     return (
-      <div className="flex items-center gap-4 text-white pt-4 pb-2 whitespce-nowrap">
+      <div className="flex items-center gap-4 text-white pt-4 pb-2 whitespce-nowrap slideRight">
         <div className="flex-1 text-sm md:text-lg lg:text-xl">
           {">"}&nbsp; {name}
         </div>
@@ -33,7 +33,7 @@ const Departments: React.FC<DepartmentProps> = () => {
           })}
         </div>
       </div>
-      <div className="flex-1 flex items-center md:w-fit pt-6">
+      <div className="flex-1 flex items-center md:w-fit pt-6 zoomOut">
                         <img src="assets/images/testimonial_cover.jpg" alt="" className="object-cover 2xl:object-fill  "  />
                     </div>
     </div>
