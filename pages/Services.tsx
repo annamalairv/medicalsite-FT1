@@ -15,7 +15,7 @@ const Services = () => {
     })
   );
   return (
-    <div className="">
+    <div className="overflow-x-hidden ">
       <Breadcrumbs {...breadCrumbsProps} />
       <Departments />
       <MakeAnAppointmentMini />

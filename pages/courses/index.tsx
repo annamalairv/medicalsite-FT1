@@ -29,11 +29,11 @@ export default function DoctorsPage() {
       },
     ];
     return (
-      <div className={`h-screen ${
+      <div className={`h-screen overflow-x-hidden  ${
         index % 2 == 0 ? "bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] ":"bg-white"
       }`}>
         <div
-          className={`container mx-auto h-full items-center px-4 md:px-6 lg:px-10 xl:px-20 gap-4 md:gap-6 lg:gap-10 flex ${
+          className={`flex  md:flex-row gap-4 md:gap-10 lg:gap-16 md:py-20 px-10   md:px-6 lg:px-10 xl:px-32 py-4   ${
             index % 2 == 0 ? " text-white flex-row" : " text-[#2290BA] flex-row-reverse "
           }`}
         >
@@ -97,7 +97,10 @@ export default function DoctorsPage() {
           </div>
           
           </div>
-          <img src={course.url} alt="" className={`w-[50%] ${index % 2 == 0 ?"slideLeft":"slideRight"}`} />
+          <div className="flex-1 flex items-center md:w-fit pt-6 zoomOut">
+                        <img src={course.url} alt="" className={`object-cover 2xl:object- ${index % 2 == 0 ?"slideLeft":"slideRight"}  `}  />
+                    </div>
+          {/* <img src={course.url} alt="" className={`w-[50%] ${index % 2 == 0 ?"slideLeft":"slideRight"}`} /> */}
         </div>
       </div>
     );
