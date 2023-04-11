@@ -29,50 +29,15 @@ export default function DoctorsPage() {
       },
     ];
     return (
-      <div className={`h-screen overflow-x-hidden  ${
+      <div className={`min-h-screen overflow-x-hidden  ${
         index % 2 == 0 ? "bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] ":"bg-white"
       }`}>
         <div
-          className={`flex  md:flex-row gap-4 md:gap-10 lg:gap-16 md:py-20 px-10   md:px-6 lg:px-10 xl:px-32 py-4   ${
-            index % 2 == 0 ? " text-white flex-row" : " text-[#2290BA] flex-row-reverse "
+          className={`flex  gap-4 md:gap-10 lg:gap-16 md:py-20 px-10   md:px-6 lg:px-10 xl:px-32 py-4   ${
+            index % 2 == 0 ? " text-white flex-col md:flex-row" : " text-[#2290BA] flex-col md:flex-row-reverse "
           }`}
         >
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 container mx-auto px-20 md:px-18 lg:px-20 py-20 pt-32 2xl:px-30 ">
-        <div className="flex flex-col gap-4 justify-start items-start">
-          <div className="text-tertiary">How Can We Help</div>
-          <div className="text-2xl md:text-3xl lg:text-4xl text-black pt-2">
-            Flexible & Responsive to Changing Need
-          </div>
-          <div className="text-secondary pt-2">
-            Sed ut perspiciatis unde omnis iste natus error voluptatem
-            accusantium doloremque laudantium totam rem aperieaqueys epsa quae
-            abillo inventore veritatis et quase
-          </div>
-          {helpserv.map((prop) => {
-            return (
-              <div className="flex flex-col   w-3/5 " key={prop.service}>
-                <div className="flex items-center ">
-                  <div className="rounded-full  text-[#499AFA] ">
-                    <CheckCircleRoundedIcon color="inherit" />
-                  </div>
-                  <div className={`${ index % 2 == 0 ? " text-white" : "text-primary "} pl-2 mt-1`}>{prop.service}</div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className=" flex items-center justify-center mx-auto h-full">
-          <div className="flex items-center">
-            <img
-              src="/assets/images/course_1.jpg"
-              alt=""
-              className="object-cover 2xl:object-fill "
-              style={{ width: `700px` }}
-            />
-          </div>
-        </div>
-      </div> */}
+          
           <div className={`flex-1 flex flex-col gap-4 ${index % 2 == 0 ?"slideRight":"slideLeft"}`}>
             <div className="text-[46px] xl:text-[62px] 2xl:text-[75px] py-4 lora-bold">
               {course.name}

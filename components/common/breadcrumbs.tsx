@@ -27,7 +27,7 @@ const {backgroundColor,backgroundImage,title,previous,textColor}=props
                     {title}
                 </div>
                 <div className="flex justify-center gap-4 text-[22px] xl:text-[26px] 2xl:text-[30px]">
-                    <Link href={`/${previous.route}`} >{previous.name}</Link>
+                    <Link href={`${previous.route}`} >{previous.name}</Link>
                     <div className=""> <ArrowForwardIosIcon color='inherit' /> </div>
                     <div className="">{title}</div>
                 </div>

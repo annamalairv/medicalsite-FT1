@@ -26,7 +26,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
       >
         <div className=" h-full w-full md:w-5/12 2xl:w-[40%] flex flex-col items-center justify-center">
           <div className="ml-20 flex flex-col items-start justify-center appointment-hero-text">
-            <div className="lora-bold leading-tight text-[#2290BA] text-[60px] lg:text-[72px] xl:text-[85px] slideRight">
+            <div className="lora-semibold leading-tight text-[#2290BA] text-[60px] lg:text-[72px] xl:text-[85px] slideRight">
               <div className="hidden md:block">
               Open Up<br/> To New Possibilities
               </div>
