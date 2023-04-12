@@ -81,7 +81,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
         <div className=" xxs:w-full xs:w-3/4 flex flex-col items-center justify-center pt-20">
           <div className="xxs:mx-8 xxs:ml-12 xs:ml-20 flex flex-col items-start justify-center appointment-hero-text">
             <div className="lora-bold leading-tight text-secondary text-[60px] lg:text-[72px] xl:text-[85px] ">
-              We Care Medical & Health
+            Open Up<br/> To New Possibilities
             </div>
             <div className="lora-regular md:text-lg lg:text-xl 2xl:text-2xl pt-4 md:pt-8 text-primary text-justify">
               Dolor sit amet consectetur adipiscing elitsedes eiusmod tempor
