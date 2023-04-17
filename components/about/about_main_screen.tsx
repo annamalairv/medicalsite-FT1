@@ -1,4 +1,5 @@
 import FourImageLayout from "./four_image_layout";
+import Link from 'next/link'
 
 const AboutMainScreen:React.FC<any>=(props)=>{
 return(
@@ -17,7 +18,7 @@ return(
           </div>
           <div className="pt-4">
             <div className="rounded-full px-6 py-2 bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] cursor-pointer text-white lora-semibold">
-              Learn more+
+                              <Link  href="/about">Learn more+ </Link>
             </div>
           </div>
         </div>

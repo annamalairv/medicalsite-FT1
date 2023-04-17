@@ -3,6 +3,7 @@ import { useState } from "react";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import SendIcon from '@mui/icons-material/Send';
 import SchoolIcon from '@mui/icons-material/School';
+import Link from 'next/link';
 
 export default function DoctorsPage() {
   const [breadCrumbsProps, setBreadCrumbsProps] = useState<BreadCrumbsProps>(
@@ -57,7 +58,7 @@ export default function DoctorsPage() {
             </div>
             <div className="pt-4">
             <div className="rounded-full px-6 py-2 w-40 text-center bg-[#2290BA] text-white lora-semibold">
-              Learn more+
+            <Link  href="/contact">Learn more+ </Link>
             </div>
           </div>
           

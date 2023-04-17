@@ -252,7 +252,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                 </div>
             </div>
             <div className="pt-8 pb-6 flex justify-center">
-                © Seeva Psychiatrist. All rights reserved.
+                © OpenTalk Psychiatrist. All rights reserved.
             </div>
 
         </div>
