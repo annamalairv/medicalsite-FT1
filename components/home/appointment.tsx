@@ -101,7 +101,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
             className="w-full"
           />
           <img
-            src="assets/images/appointment.png"
+            src="assets/images/appointment.jpg"
             alt=""
             className="absolute inset-y-10 inset-x-6 w-3/4 h-3/4 absolute-center"
           />
