@@ -20,13 +20,13 @@ const WhyChooseUs:React.FC<WhyChooseUsProps>=(props)=>{
             <div className="absolute inset-x-0 -bottom-[80px] z-1 2xl:container 2xl:mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-6 px-4 md:px-10">
                     <div className="slideLeft">
-                <ImageCardWithText imageUrl={"/assets/images/wheelchair_grandma.jpg"} text={"Optimize Your Health Care Services"} />
+                <ImageCardWithText imageUrl={"/assets/images/img1.jpg"} text={"Optimize Your Health Care Services"} />
                     </div>
                 <div className="lg:-mt-10 hidden md:block ">
-                <ImageCardWithText imageUrl={"/assets/images/nurse_injection.jpg"} text={"Optimize Your Health Care Services"} />
+                <ImageCardWithText imageUrl={"/assets/images/img2.jpg"} text={"Optimize Your Health Care Services"} />
                 </div>
                 <div className="hidden lg:block slideRight">
-                <ImageCardWithText imageUrl={"/assets/images/child_heart_beat.jpg"} text={"Optimize Your Health Care Services"} />
+                <ImageCardWithText imageUrl={"/assets/images/img3.jpg"} text={"Optimize Your Health Care Services"} />
                 </div>
                 </div>
             </div>

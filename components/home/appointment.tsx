@@ -52,7 +52,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
             }}
           >
             <img
-              src="assets/images/appointment.png"
+              src="assets/images/appointment.jpg"
               alt=""
               className="object-cover 2xl:object-fill"
               style={{ width: `${patternwidth * 1.1}px` }}

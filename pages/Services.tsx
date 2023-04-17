@@ -25,7 +25,7 @@ const Services = () => {
         </div>
         <div className="flex-1 flex items-center md:w-fit pt-6 slideLeft">
           <img
-            src="assets/images/testimonial_cover.jpg"
+            src="assets/images/img4.avif"
             alt=""
             className="object-cover 2xl:object-fill  "
           />

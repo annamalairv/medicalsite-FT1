@@ -97,7 +97,7 @@ export default function DoctorsPage() {
             "Artistic Therapies- Drama & Psychodrama",
             "Applied Behaviour Analysis",
           ],
-          url: "/assets/images/course_2.jpg",
+          url: "/assets/images/c1.jpg",
         },
         {
           name: "Certificate Courses",
@@ -110,7 +110,7 @@ export default function DoctorsPage() {
             "Humanistic Therapies",
             "   Inner Child Healing",
           ],
-          url: "/assets/images/course_1.jpg",
+          url: "/assets/images/c2.jpg",
         },{
           name: "Interships",
           background: "white",
@@ -122,7 +122,7 @@ export default function DoctorsPage() {
             "In Industry",
          "   In HR",
           ],
-          url: "/assets/images/course_1.jpg",
+          url: "/assets/images/c3.jpg",
         },
         {
           name: "Training Programs & Research Works",
@@ -134,7 +134,7 @@ export default function DoctorsPage() {
             "Book Publication",
           "  Patent",
           ],
-          url: "/assets/images/course_1.jpg",
+          url: "/assets/images/c4.jpg",
         },
       ].map((course, index) => {
         return <Course course={course} index={index} />;

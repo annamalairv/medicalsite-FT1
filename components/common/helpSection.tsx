@@ -5,15 +5,16 @@ const HelpSection = () => {
   let helpserv = [
     {
       service:
-        "25-30% estimated savings in implementation when using Mobile Health Clinics",
+        "We provide intern over Tamilnadu in various reputed Clinics, HR, Counselling, Deaddiction and Industrial sectors.lp",
     },
-    { service: "Activate Mobile Health Clinics in just weeks" },
+    { service: "We take NET classes with the faculties with JRF and SRF qualification" },
     { service: "Flexible, on-demand access to care services" },
     {
       service:
         "Supports referrals to provider networks and care management programs",
     },
   ];
+
 
   return (
     <div className=" ">
@@ -34,9 +35,7 @@ const HelpSection = () => {
             Flexible & Responsive to Changing Need
           </div>
           <div className="text-[#2290BA] pt-2">
-            Sed ut perspiciatis unde omnis iste natus error voluptatem
-            accusantium doloremque laudantium totam rem aperieaqueys epsa quae
-            abillo inventore veritatis et quase
+          We provide Certification course through various experts of the field
           </div>
           {helpserv.map((prop) => {
             return (
