@@ -33,11 +33,11 @@ const Appointment: React.FC<AppointmentProps> = () => {
              
             </div>
             <div className="lora-regular md:text-lg lg:text-xl 2xl:text-2xl pt-4 md:pt-8 text-[#2290BA] text-justify">
-              Dolor sit amet consectetur adipiscing elitsedes eiusmod tempor
-              incididunt utlabore Lorem
+            Choose a healthy lifestyle and overcome the obstacles that inhibit them from making smarter decisions
             </div>
             <div className="lora-semibold mt-10">
-              <div className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] cursor-pointer text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
+              <div onClick={()=>document?.getElementById('MAKE_APPOINMENT_SECTION')?.scrollIntoView({ behavior: 'smooth' })}
+               className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] cursor-pointer text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
                 Make an Appointment +
               </div>
             </div>
@@ -88,7 +88,7 @@ const Appointment: React.FC<AppointmentProps> = () => {
               incididunt utlabore Lorem
             </div>
             <div className="lora-semibold my-10">
-              <div className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-[#14C3D9] text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
+              <div onClick={()=>document?.getElementById('MAKE_APPOINMENT_SECTION')?.scrollIntoView({ behavior: 'smooth' })} className="p-2 px-8 xl:p-4 xl:px-12 rounded-full bg-[#14C3D9] text-center  lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
                 Make an Appointment +
               </div>
             </div>

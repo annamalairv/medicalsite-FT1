@@ -34,8 +34,8 @@ const Footer: React.FC<FooterProps> = (props) => {
             <div className={`md:flex hidden justify-center`}>
                 <div className="flex flex-row gap-4 py-2 w-fit justify-between container">
                     <div className="flex flex-col gap-4 py-2 w-1/3 ">
-                        <div className="" style={{scale:1.1}} >
-                        <Image width={150} height={45} alt={"logo"} src={"/assets/images/otLogo.png"} />
+                        <div className="" style={{ scale: 1.1 }} >
+                            <Image width={150} height={45} alt={"logo"} src={"/assets/images/otLogo.png"} />
                         </div>
 
                         <div className="flex items-center gap-4">
@@ -57,7 +57,9 @@ const Footer: React.FC<FooterProps> = (props) => {
                                 <MailOutlineIcon color="inherit" />
                             </div>
                             <div className="text-primary">
-                                booking@seeva.com
+                                <a href="mailto:booking@seeva.com">
+                                    booking@seeva.com
+                                </a>
                             </div>
 
                         </div>
@@ -66,7 +68,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                                 <PhoneEnabledIcon color="inherit" />
                             </div>
                             <div className="text-primary">
-                                +91 86101 86163
+                              <a href="tel:+918610186163">+91 86101 86163</a>
                             </div>
                         </div>
                     </div>
@@ -166,7 +168,9 @@ const Footer: React.FC<FooterProps> = (props) => {
                                 <MailOutlineIcon color="inherit" />
                             </div>
                             <div className="text-primary">
-                                booking@seeva.com
+                            <a href="mailto:booking@seeva.com">
+                                    booking@seeva.com
+                                </a>
                             </div>
 
                         </div>
@@ -175,7 +179,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                                 <PhoneEnabledIcon color="inherit" />
                             </div>
                             <div className="text-primary">
-                                +91 86101 86163
+                            <a href="tel:+918610186163">+91 86101 86163</a>
                             </div>
                         </div>
                     </div>

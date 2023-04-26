@@ -11,10 +11,10 @@ return(
             All in one Worksite health solution
           </div>
           <div className="text-[#2290BA] pt-2 lora-medium">
-            we provide best Experience in Medical Services
+            We provide best Experience in Medical Services
           </div>
           <div className="text-lg leading-8 pt-2 lora-regular text-[#2290BA]">
-          Open talk is a one solution for all your psychological intern, courses and entrance exam etc. We are an organisation started in year of 2020 to provide internships for psychology students and Howe have widened our services in various fields. We provide all kinds of internships like Clinical, Counselling, HR, Deaddiction etc and we also take coaching classes for NET and PG entrance classes.
+          Open talk is a one solution for all your psychological intern, courses and entrance exam etc. We are an organisation started in year of 2020 to provide internships for psychology students and we have widened our services in various fields. We provide all kinds of internships like Clinical, Counselling, HR, Deaddiction etc and we also take coaching classes for NET and PG entrance classes.
           </div>
           <div className="pt-4">
             <div className="rounded-full px-6 py-2 bg-gradient-to-r from-[#14C3D9] to-[#3CC5C4] cursor-pointer text-white lora-semibold">

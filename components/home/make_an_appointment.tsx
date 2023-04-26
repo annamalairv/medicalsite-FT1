@@ -14,7 +14,7 @@ const MakeAnAppointment: React.FC<MakeAnAppointmentProps> = () => {
 
   return (
     <div className="flex flex-col-reverse md:flex-row container mx-auto  lg:px-10 xl:px-20 py-10 md:h-[800px]">
-      <div className="flex-1 bg-gradient-to-r from-[#3CC5C4] to-[#14C3D9]  px-4 lg:px-8 xl:px-10  text-center md:text-start">
+      <div id="MAKE_APPOINMENT_SECTION" className="flex-1 bg-gradient-to-r from-[#3CC5C4] to-[#14C3D9]  px-4 lg:px-8 xl:px-10  text-center md:text-start">
         <div className="text-white text-[24px] md:text-[30px] lg:text-[38px] py-2 pt-8 lora-regular">Make an appointment</div>
         <div className=" text-[28px] md:text-[38px] lg:text-[45px] text-[#0e204d] py-2 lora-bold">
           Make an Appointment to Doctor Visit
